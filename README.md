@@ -45,7 +45,7 @@ python manage.py runserver
 
 - `/rooms/`
   Получить список всех комнат (`GET`), создать новую комнату (`POST`).  
-  [Поддерживает сортировку](#sorted_rooms_list) через параметр `ordering`.
+  [Поддерживает сортировку](##сортировка-вывода-при-get-rooms) через параметр `ordering`.
 
 - `/rooms/{id}/`
   Получить детали комнаты по id (`GET`), обновить (`PUT/PATCH`), удалить (`DELETE`).
@@ -64,7 +64,7 @@ python manage.py runserver
 
 ---
 
-### Сортировка вывода при GET `/rooms/` (#sorted_rooms_list)
+### Сортировка вывода при GET `/rooms/`
 ```
 /rooms/?ordering={ключ сортировки}
 ```
