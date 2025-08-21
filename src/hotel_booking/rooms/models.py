@@ -7,4 +7,4 @@ class Room(models.Model):
     date_added = models.DateTimeField(auto_now_add=True, editable=False)
 
     def __str__(self):
-        return ' '.join(self.description.split()[:2])
+        return " ".join(self.description.split()[:2])
