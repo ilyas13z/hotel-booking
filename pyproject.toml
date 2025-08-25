@@ -38,10 +38,11 @@ pythonpath = ["src"]
 [tool.ruff]
 line-length = 79
 lint.select = [
-    "E",  # pycodestyle errors
-    "F",  # pyflakes
-    "I",  # isort
-    "B",  # flake8-bugbear
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "I",    # isort
+    "B",    # flake8-bugbear
+    "ERA",  # flake8-erase (убирает комментарии)
 ]
 exclude = [
     "migrations",
