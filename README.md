@@ -34,6 +34,17 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+### 7. Загрузка тестовых данных из фикстур
+
+Для загрузки демонстрационных данных используйте команды:
+
+```bash
+python manage.py loaddata rooms/fixtures/rooms.json
+python manage.py loaddata bookings/fixtures/bookings.json
+```
+
+Это добавит примеры комнат и бронирований в базу данных.
+
 ---
 
 ## Документация
