@@ -56,12 +56,12 @@ WSGI_APPLICATION = "hotel_booking.wsgi.application"
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "hotel-booking",
-        "USER": "admin",
-        "PASSWORD": "12345",
-        "HOST": "localhost",
-        "PORT": "5432",
+        "ENGINE": os.getenv("DATABASE_ENGINE", "django.db.backends.sqlite3"),
+        "NAME": os.getenv("DATABASE_NAME", "hotel-booking"),
+        "USER": os.getenv("DATABASE_USERNAME", "admin"),
+        "PASSWORD": os.getenv("DATABASE_PASSWORD", "12345"),
+        "HOST": os.getenv("DATABASE_HOST", "127.0.0.1"),
+        "PORT": os.getenv("DATABASE_PORT", 5432),
     }
 }
 

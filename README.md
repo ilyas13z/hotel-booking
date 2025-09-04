@@ -14,8 +14,7 @@ source venv/bin/activate
 
 ### 3. Установите зависимости
 ```bash
-pip install poetry
-poetry install
+pip install -r requirements.txt
 ```
 
 ### 4. Скопируйте файл переменных окружения
@@ -90,7 +89,7 @@ python manage.py loaddata bookings/fixtures/bookings.json
 Для запуска тестов используйте команду:
 
 ```bash
-poetry run pytest
+pytest
 ```
 
 Тесты находятся в директории `src/hotel_booking/tests/`.

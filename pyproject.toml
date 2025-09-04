@@ -1,38 +1,5 @@
-[project]
-name = "hotel_booking"
-version = "0.1.0"
-description = ""
-authors = [
-    {name = "ilyas13z",email = "ilyas13z@yandex.ru"}
-]
-readme = "README.md"
-requires-python = ">=3.13"
-dependencies = [
-    "django (>=5.2.5,<6.0.0)",
-    "djangorestframework (>=3.16.1,<4.0.0)",
-    "ruff (>=0.12.8,<0.13.0)",
-    "pytest (>=8.4.1,<9.0.0)",
-    "pytest-django (>=4.11.1,<5.0.0)",
-    "pre-commit (>=4.3.0,<5.0.0)",
-    "python-dotenv (>=1.1.1,<2.0.0)",
-    "psycopg2-binary (>=2.9.10,<3.0.0)",
-]
-
-[tool.poetry]
-packages = [{include = "hotel_booking", from = "src"}]
-
-
-[tool.poetry.group.dev.dependencies]
-pytest-django = "^4.11.1"
-
-[build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
-build-backend = "poetry.core.masonry.api"
-
-
 [tool.pytest.ini_options]
 DJANGO_SETTINGS_MODULE = "hotel_booking.settings"
-pythonpath = ["src"]
 
 
 [tool.ruff]
@@ -43,6 +10,8 @@ lint.select = [
     "I",    # isort
     "B",    # flake8-bugbear
     "ERA",  # flake8-erase (убирает комментарии)
+    "RUF100",
+    "PGH003",
 ]
 exclude = [
     "migrations",
