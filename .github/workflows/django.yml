@@ -21,6 +21,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
+        cp .env.example .env
     - name: Move directory and start testing
       working-directory: ./hotel_booking
       run: |
