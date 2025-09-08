@@ -1,5 +1,5 @@
 # Запуск Django проекта
-
+[![Django CI](https://github.com/ilyas13z/hotel-booking/actions/workflows/django.yml/badge.svg)](https://github.com/ilyas13z/hotel-booking/actions/workflows/django.yml)
 ### 1. Клонируйте репозиторий
 ```bash
 git clone https://github.com/ilyas13z/hotel-booking
