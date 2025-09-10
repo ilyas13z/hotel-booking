@@ -44,6 +44,20 @@ python manage.py loaddata bookings/fixtures/bookings.json
 
 Это добавит примеры комнат и бронирований в базу данных.
 
+### 8. Запуск проекта в docker контейнере через make
+
+Чтобы запустить docker-compose используйте команду:
+
+```bash
+make run
+```
+
+Чтобы остановить введите следующую команду:
+
+```bash
+make stop
+```
+
 ---
 
 ## Документация
@@ -92,4 +106,4 @@ python manage.py loaddata bookings/fixtures/bookings.json
 pytest
 ```
 
-Тесты находятся в директории `src/hotel_booking/tests/`.
+Тесты находятся в директории `/hotel_booking/tests/`.

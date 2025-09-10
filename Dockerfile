@@ -40,4 +40,4 @@ RUN python /app/hotel_booking/manage.py collectstatic --noinput
 EXPOSE 8000 
 
 
-CMD ["bash", "-c", "python /app/hotel_booking/manage.py makemigrations", "&& python /app/hotel_booking/manage.py migrate && python /app/hotel_booking/manage.py loaddata /app/hotel_booking/rooms/fixtures/rooms.json && python /app/hotel_booking/manage.py loaddata /app/hotel_booking/bookings/fixtures/bookings.json && gunicorn --chdir /app/hotel_booking hotel_booking.wsgi:application --bind 0.0.0.0:8000 --workers 3"]
+CMD ["bash", "-c", "python /app/hotel_booking/manage.py makemigrations && python /app/hotel_booking/manage.py migrate && python /app/hotel_booking/manage.py loaddata /app/hotel_booking/rooms/fixtures/rooms.json && python /app/hotel_booking/manage.py loaddata /app/hotel_booking/bookings/fixtures/bookings.json && gunicorn --chdir /app/hotel_booking hotel_booking.wsgi:application --bind 0.0.0.0:8000 --workers 3"]
