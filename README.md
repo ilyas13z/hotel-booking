@@ -25,6 +25,7 @@ cp .env.example .env
 
 ### 5. Проведите миграции
 ```bash
+cd hotel_booking/
 python manage.py migrate
 ```
 
