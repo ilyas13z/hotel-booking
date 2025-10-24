@@ -1,0 +1,44 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Django SQLite database (локально)
+*.sqlite3
+db.sqlite3
+
+# Virtual environments
+venv/
+.venv/
+
+# Distribution / packaging
+*.egg-info/
+*.egg
+build/
+dist/
+
+# Logs
+*.log
+
+# IDE / editor configs
+.idea/
+.vscode/
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Git / Docker
+.git
+.gitignore
+.dockerignore
+
+# Django static & media (собираются в контейнере или монтируются)
+static/
+media/
+
+# Fixtures (по желанию, если они уже в контейнере через COPY)
+*.json

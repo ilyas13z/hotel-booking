@@ -1,0 +1,56 @@
+[
+    {
+        "model": "bookings.booking",
+        "pk": 2,
+        "fields": {
+            "id_room": 3,
+            "date_start": "2025-08-17",
+            "date_end": "2025-08-31"
+        }
+    },
+    {
+        "model": "bookings.booking",
+        "pk": 3,
+        "fields": {
+            "id_room": 2,
+            "date_start": "2025-10-09",
+            "date_end": "2025-11-06"
+        }
+    },
+    {
+        "model": "bookings.booking",
+        "pk": 4,
+        "fields": {
+            "id_room": 4,
+            "date_start": "2025-08-19",
+            "date_end": "2025-09-25"
+        }
+    },
+    {
+        "model": "bookings.booking",
+        "pk": 5,
+        "fields": {
+            "id_room": 5,
+            "date_start": "2025-11-06",
+            "date_end": "2026-04-16"
+        }
+    },
+    {
+        "model": "bookings.booking",
+        "pk": 6,
+        "fields": {
+            "id_room": 2,
+            "date_start": "2025-08-22",
+            "date_end": "2025-08-29"
+        }
+    },
+    {
+        "model": "bookings.booking",
+        "pk": 7,
+        "fields": {
+            "id_room": 2,
+            "date_start": "2025-08-22",
+            "date_end": "2025-08-29"
+        }
+    }
+]

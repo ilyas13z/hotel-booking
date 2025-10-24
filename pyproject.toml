@@ -1,0 +1,22 @@
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "hotel_booking.settings"
+
+
+[tool.ruff]
+line-length = 79
+lint.select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "I",    # isort
+    "B",    # flake8-bugbear
+    "ERA",  # flake8-erase (убирает комментарии)
+    "RUF100",
+    "PGH003",
+]
+exclude = [
+    "migrations",
+    ".venv",
+    "venv",
+    "__pycache__",
+]
+target-version = "py311"
